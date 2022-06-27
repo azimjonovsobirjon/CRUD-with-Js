@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Project</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-xl-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">add student</h3>
+                    </div>
+                    <div class="card-body">
+                        <form name="myForm">
+                            <input 
+                            type="text" 
+                            name="firstName" 
+                            class="firstName my-2 form-control" 
+                            placeholder="Enter your firstName">
+                            <input 
+                            type="text" 
+                            name="lastName" 
+                            class="lastName my-2 form-control" 
+                            placeholder="Enter your lastName">
+                            <input 
+                            type="text" 
+                            name="company" 
+                            class="company my-2 form-control" 
+                            placeholder="Enter your company">
+                            <input 
+                            type="number" 
+                            name="age" 
+                            class="age my-2 form-control" 
+                            placeholder="Enter your age">
+                            <select name="region" id="region" class="form-control">
+                                <option disabled selected>tanlang</option>
+                                <option value="andijon">andijon</option>
+                                <option value="farg'ona">farg'ona</option>
+                                <option value="toshkent">toshkent</option>
+                                <option value="buxoro">buxoro</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <button id="myBtn" class="w-100 btn btn-dark">add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <table class="table table-bordered table-dark">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Company</th>
+                            <th>Age</th>
+                            <th>Region</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table table-bordered">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
